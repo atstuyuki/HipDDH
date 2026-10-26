@@ -76,3 +76,12 @@ HipDDH/
 - 依存ライブラリは各Notebook冒頭の `%pip install` セルでも導入されます。
 
 研究データや未検証結果を含めないように、**Notebookの出力セルは消去した状態で管理**します。
+
+## 前田先生 — 18クラスSegmentation（患者独立3-fold）
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/atstuyuki/HipDDH/blob/main/notebooks/Maeda_HipDDR_18class_Group3Fold_Segmentation_Colab.ipynb)
+
+健常10例＋DDH3例のCOCO segmentationを患者単位で分割する探索的解析です。
+左右（R/L）×歩行相（SW/ST/DS）×3領域（SL/SM/M）の18クラスについてMask mAPを評価し、歩行相を除いた左右6領域のDice/IoUも患者別に算出します。
+**研究用のZIP・画像・患者情報・学習重みはGitHubにアップロードしないでください。**
+GPUによる再学習は別途Colabで実行してください。
